@@ -145,7 +145,7 @@
         <!-- Physical Description -->
         <field name="types" type="string" indexed="true" stored="true" multiValued="true" />
         <field name="format" type="string" indexed="true" stored="true"  multiValued="true" />
-        <field name="format_name" type="string" indexed="true" stored="true"  multiValued="true" />
+        <field name="format_name" type="string" indexed="true" stored="true"  multiValued="true" termVectors="true"/>
         <field name="dimensions" type="string" indexed="true" stored="true"  />
         <!-- Topics -->
         <field name="subject" type="text_en" indexed="true" stored="true"  multiValued="true" termVectors="true" />
