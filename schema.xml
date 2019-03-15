@@ -126,6 +126,12 @@
         <field name="set_spec" type="string" indexed="true" stored="true"  />
         <field name="collection_name" type="text_en" indexed="true" stored="true"  />
         <field name="collection_description" type="text_en" indexed="true" stored="true"  />
+        <!--
+          collection_recency_sort is derived from CONTENTdm'S set_spec data, which is is a delta
+          We strip out non-numeric data to achieve a correct sort. See 'featured_collection.rb'
+          for details.
+        -->
+        <field name="collection_recency_sort" type="pint" indexed="true" stored="true" multiValued="false" />
         <field name="super_collection_names" type="text_en" indexed="true" stored="true" multiValued="true"/>
         <field name="super_collection_set_specs" type="string" indexed="true" stored="true" multiValued="true"/>
         <field name="super_collection_descriptions" type="text_en" indexed="true" stored="true" multiValued="true"/>
