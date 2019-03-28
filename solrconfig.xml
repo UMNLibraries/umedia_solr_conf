@@ -711,6 +711,7 @@
          id
          title^2.4
          title_t^2.4
+         title_search^2.4
          title_s^2.6
          title_alternative^.5
          title_alternative_s^.55
@@ -762,6 +763,7 @@
          title^2.4
          title_s^2.6
          title_t^2.4
+         title_search^2.4
          title_alternative^.5
          title_alternative_s^.55
          title_alternative_t^.55
