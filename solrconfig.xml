@@ -938,6 +938,7 @@
           subject
           subject_fast
           creator
+          format_name
        </str>
        <!--The fields to use for similarity-->
       <str name="mlt.fl">title,subject,subject_fast,creator</str>
