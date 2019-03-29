@@ -489,6 +489,7 @@
     <dynamicField name="*_txt_en_ascii" type="text_en"  indexed="true"  stored="true"/>
     <fieldType name="text_en_ascii" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
+         <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-FoldToASCII.txt"/>
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.ASCIIFoldingFilterFactory" preserveOriginal="false" />
         <!-- in this example, we will only use synonyms at query time
@@ -510,6 +511,7 @@
         <filter class="solr.PorterStemFilterFactory"/>
       </analyzer>
       <analyzer type="query">
+        <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-FoldToASCII.txt"/>
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.ASCIIFoldingFilterFactory" preserveOriginal="false" />
         <filter class="solr.SynonymGraphFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
