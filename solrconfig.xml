@@ -758,6 +758,7 @@
          dls_identifier
          persistent_url
          local_rights
+         fiscal_sponsor
        </str>
        <str name="pf">
          title^2.4
@@ -785,6 +786,7 @@
          transcription
          translation
          collection_name_t
+         fiscal_sponsor
        </str>
 
        <str name="title_qf">
