@@ -141,6 +141,7 @@
   <field name="description" type="text_en" indexed="true" stored="true" />
   <field name="date_created" type="text_en_splitting_tight" indexed="true" stored="true" multiValued="true" />
   <field name="date_created_sort" type="text_gen_sort" indexed="true" stored="true" multiValued="false" />
+  <field name="date_added" type="pdate" indexed="true" stored="true" multiValued="false" />
   <field name="historical_era" type="string" indexed="true" stored="true" multiValued="true" />
   <field name="creator" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" />
   <field name="creator_sort" type="text_gen_sort" indexed="true" stored="true" multiValued="false" />
