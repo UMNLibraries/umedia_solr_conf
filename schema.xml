@@ -159,11 +159,11 @@
   <field name="subject_fast" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" />
   <field name="language" type="string" indexed="true" stored="true" multiValued="true" />
   <!-- Geographic Details -->
-  <field name="city" type="string" indexed="true" stored="true" multiValued="true" />
-  <field name="state" type="string" indexed="true" stored="true" multiValued="true" />
-  <field name="country" type="string" indexed="true" stored="true" multiValued="true" />
-  <field name="region" type="string" indexed="true" stored="true" multiValued="true" />
-  <field name="continent" type="string" indexed="true" stored="true" multiValued="true" />
+  <field name="city" type="text_en" indexed="true" stored="true" multiValued="true" />
+  <field name="state" type="text_en" indexed="true" stored="true" multiValued="true" />
+  <field name="country" type="text_en" indexed="true" stored="true" multiValued="true" />
+  <field name="region" type="text_en" indexed="true" stored="true" multiValued="true" />
+  <field name="continent" type="text_en" indexed="true" stored="true" multiValued="true" />
   <field name="geonames" type="string" indexed="true" stored="true" multiValued="true" />
   <field name="projection" type="string" indexed="true" stored="true" />
   <field name="scale" type="string" indexed="true" stored="true" />
