@@ -141,7 +141,7 @@
   <field name="description" type="text_en" indexed="true" stored="true" />
   <field name="date_created" type="text_en_splitting_tight" indexed="true" stored="true" multiValued="true" />
   <field name="date_created_sort" type="text_gen_sort" indexed="true" stored="true" multiValued="false" />
-  <field name="date_added" type="pdate" indexed="true" stored="true" multiValued="false" />
+  <field name="date_added" type="rdate" indexed="true" stored="true" multiValued="false" />
   <field name="historical_era" type="string" indexed="true" stored="true" multiValued="true" />
   <field name="creator" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" />
   <field name="creator_sort" type="text_gen_sort" indexed="true" stored="true" multiValued="false" />
@@ -363,6 +363,9 @@
   <!-- KD-tree versions of date fields -->
   <fieldType name="pdate" class="solr.DatePointField" docValues="true"/>
   <fieldType name="pdates" class="solr.DatePointField" docValues="true" multiValued="true"/>
+
+  <fieldType name="rdate" class="solr.DateRangeField" />
+  <fieldType name="rdates" class="solr.DateRangeField" multiValued="true"/>
 
   <!--Binary data type. The data should be sent/retrieved in as Base64 encoded Strings -->
   <fieldType name="binary" class="solr.BinaryField"/>
