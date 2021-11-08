@@ -187,6 +187,8 @@
   <field name="local_rights" type="text_en" indexed="true" stored="true" />
   <field name="standardized_rights" type="text_en" indexed="true" stored="true" />
   <field name="rights_statement_uri" type="string" indexed="true" stored="true" />
+  <field name="expected_public_domain_year" type="string" indexed="true" stored="true" />
+  <field name="additional_rights_information" type="text_en" indexed="true" stored="true" />
   <!-- Transcripts -->
   <field name="transcription" type="text_en" indexed="true" stored="true" />
   <field name="translation" type="text_en" indexed="true" stored="true" />
