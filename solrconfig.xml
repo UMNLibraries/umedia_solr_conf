@@ -751,7 +751,8 @@
          kaltura_combo_playlist
          set_spec
          collection_name_t
-
+         collection_name
+         parent_collection_name
          local_identifier
          barcode
          system_identifier
