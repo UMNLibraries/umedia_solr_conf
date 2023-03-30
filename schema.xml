@@ -197,15 +197,20 @@
   <field name="alternate_languages" type="string" indexed="true" stored="true" multiValued="true" />
 
   <!-- Spanish language enhancement fields -->
+  <field name="es_title" type="text_general_single" indexed="true" stored="true" termVectors="true" />
   <field name="es_description" type="text_general_single" indexed="true" stored="true" multiValued="false" />
   <field name="es_notes" type="text_general_single" indexed="true" stored="true" multiValued="false" />
-  <field name="es_physical_format" type="string" indexed="true" stored="true" multiValued="true" />
+  <field name="es_format_name" type="string" indexed="true" stored="true" multiValued="true" />
+  <field name="es_types" type="string" indexed="true" stored="true" multiValued="true" />
+  <field name="es_dimensions" type="string" indexed="true" stored="true" />
   <field name="es_subject" type="text_general" indexed="true" stored="true" multiValued="true" termVectors="true" />
   <field name="es_country" type="text_general" indexed="true" stored="true" multiValued="true" />
   <field name="es_continent" type="text_general" indexed="true" stored="true" multiValued="true" />
   <field name="es_language" type="string" indexed="true" stored="true" multiValued="true" />
   <field name="es_local_rights" type="text_general_single" indexed="true" stored="true" multiValued="false" />
   <field name="es_rights_statement_uri" type="string" indexed="true" stored="true" multiValued="false" />
+
+  <copyField source="es_subject" dest="es_subject_ss"/>
 
   <!-- NON-DISPLAY FIELDS -->
   <field name="kaltura_audio" type="string" indexed="true" stored="true" />
