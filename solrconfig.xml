@@ -732,14 +732,14 @@
          caption
          date_created
          historical_era
-         type
+         types
          format
          city
          state
          country
          region
          continent
-         languagelanguage
+         language
          contributing_organization
          contributing_organization_s
          transcription
